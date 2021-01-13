@@ -78,9 +78,15 @@ body{
   border: none;
   margin-top: 20px;
   border-radius: 0;
+  outline: none;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #FFFF00;
+  opacity: 1; /* Firefox */
 }
 input.middle:focus {
     outline-width: 0;
+    outline: none;
 }
 
 .thanks{
