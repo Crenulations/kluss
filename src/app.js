@@ -3,7 +3,7 @@ const mongoose = require("mongoose")
 const api_routes = require("../routes/api_routes")
 const primary_routes = require("../routes/primary_routes")
 
-mongoose // MongoDB database connection which contains REST API
+mongoose // Mongo?DB database connection which contains REST API
 	.connect("mongodb://localhost:27017/PrimaryData", { useNewUrlParser: true })
 	.then(() => {
 
