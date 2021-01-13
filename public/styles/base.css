@@ -1,0 +1,155 @@
+@font-face {
+  font-family: Castoro;
+  src: url(/res/fonts/Castoro-Regular.ttf);
+}
+@font-face {
+  font-family: PassionOne;
+  src: url(/res/fonts/PassionOne-Regular.ttf);
+}
+@font-face {
+  font-family: Inconsolata;
+  src: url(/res/fonts/Inconsolata-var.ttf);
+}
+@font-face {
+  font-family: Futura;
+  src: url(/res/fonts/Futura_Medium.ttf);
+}
+/* ============= PHONE SCREEN ==============*/
+
+
+
+/* ============= NORMAL SCREEN =============== */
+
+@media not screen and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* ========= BASE ===========*/
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: Inconsolata, monospace;
+  font-size: 13px;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+body{
+  background-color: black;
+}
+
+/* ============= PRIMARY =============== */
+
+.page-wrapper{
+
+}
+
+.card{
+  margin: 10% 20%;
+  min-height: 50vh;
+}
+.admin-card{
+  margin: 10% 20%;
+  min-height: 50vh;
+}
+.card-row{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo{
+  width: 70%;
+}
+
+.email-input{
+  background: none;
+  color: #FFFF00;
+  font-family: Futura;
+  font-size: 20px;
+  text-align: center;
+  border: none;
+  margin-top: 20px;
+  border-radius: 0;
+}
+input.middle:focus {
+    outline-width: 0;
+}
+
+.thanks{
+  background: none;
+  color: #FFFF00;
+  font-family: Futura;
+  font-size: 20px;
+  text-align: center;
+  border: none;
+  margin-top: 20px;
+}
+
+.admin-text{
+  color: #fff;
+  font-family: Futura;
+  font-size: 18px;
+  text-align: center;
+  border: none;
+}
+.admin-holder{
+  padding: 2px;
+  margin-top: 3px;
+  min-width: 100%;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+::placeholder{
+  opacity: 1;
+}
+
+.blink {
+  animation: blinker 1s linear infinite;
+}
+
+.blink:focus{
+  animation: none;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.enter-button{
+  background: none;
+  color: yellow;
+  font-family: Inconsolata;
+  font-size: 14px;
+  text-align: center;
+  border: none;
+  margin-top: 6px;
+  display: none;
+}
+
+.enter-button.visible{
+  display: inherit;
+}
+
+
+@media only screen and (max-width: 400px), screen and (-webkit-min-device-pixel-ratio: 2){
+  .card{
+    margin: 50% 0;
+  }
+  .logo{
+    width: 90%;
+    padding-left: 4%;
+  }
+}
