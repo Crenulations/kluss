@@ -98,6 +98,15 @@ input.middle:focus {
   border: none;
   margin-top: 20px;
 }
+.little{
+  background: none;
+  color: #FFFF00;
+  font-family: Futura;
+  font-size: 10px;
+  text-align: center;
+  border: none;
+  margin-top: 20px;
+}
 
 .admin-text{
   color: #fff;
@@ -105,6 +114,14 @@ input.middle:focus {
   font-size: 18px;
   text-align: center;
   border: none;
+}
+.troll-holder{
+  padding: 2px;
+  margin-top: 3px;
+  min-width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
 }
 .admin-holder{
   padding: 2px;
@@ -144,6 +161,7 @@ input.middle:focus {
   margin-top: 6px;
   display: none;
 }
+
 
 .enter-button.visible{
   display: inherit;

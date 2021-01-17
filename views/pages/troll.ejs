@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="initial-scale=1">
+  <link type="text/css" href="/styles/base.css" rel="stylesheet">
+  <link type="text/css" href="/styles/flex.css" rel="stylesheet">
+  <script src="libs/jquery/jquery.js"></script>
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <div class="card">
+      <form class="main-form" action="/api/add_email" method="post">
+
+      <div class="card-row">
+        <% emails.forEach((email)=>{ %>
+          <div class="troll-holder">
+            <p class="admin-text"><%- email.email %> </p>
+          </div>
+        <% }) %>
+          <input class="email-input blink" name="email" type="text" placeholder="For real, are you okay?"onfocus="this.placeholder = ''" onblur="this.placeholder = 'enter your text'">
+          <button class="enter-button">enter</button>
+        <p class="little"> :) im always here if you need to chat</p>
+      </div>
+    </form>
+
+    </div>
+  </div>
+</body>
+
+<script>
+
+  $(".blink").focus(function(){
+    $(".enter-button").addClass("visible");
+  });
+
+</script>
+
+</html>

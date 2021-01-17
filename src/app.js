@@ -18,6 +18,6 @@ mongoose // Mongo?DB database connection which contains REST API
 		app.use("/", primary_routes)
 
 		app.listen(80, () => {
-      console.log("Succesful connection to port 3000")
+      console.log("Succesful connection to port 80")
 		})
 	})

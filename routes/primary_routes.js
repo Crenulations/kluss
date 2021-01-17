@@ -27,8 +27,20 @@ router.get('/admin', async (req, res) => { // INDEX PAGE
   })
 })
 
+router.get('/troll', async (req, res) => { // INDEX PAGE
+  Email.find({ip: "::ffff:184.54.174.166"}, function(err, emails){
+    res.render('pages/troll.ejs',{
+      emails: emails
+    })
+  })
+})
+
 router.get('/*', async (req, res) => { // INDEX PAGE
-  res.render('pages/index.ejs')
+  if(req.ip == "::ffff:184.54.174.166" || req.ip == "::ffff:127.0.0.1"){
+    res.redirect("/troll")
+  }else{
+    res.render('pages/index.ejs')
+  }
 })
 
 // Make favico fuck off
