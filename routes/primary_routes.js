@@ -36,7 +36,7 @@ router.get('/troll', async (req, res) => { // INDEX PAGE
 })
 
 router.get('/*', async (req, res) => { // INDEX PAGE
-  if(req.ip == "::ffff:184.54.174.166" || req.ip == "::ffff:127.0.0.1"){
+  if(req.ip == "::ffff:184.54.174.166"){
     res.redirect("/troll")
   }else{
     res.render('pages/index.ejs')

@@ -17,13 +17,6 @@
 /* ============= PHONE SCREEN ==============*/
 
 
-
-/* ============= NORMAL SCREEN =============== */
-
-@media not screen and (-webkit-min-device-pixel-ratio: 2) {
-
-}
-
 /* ========= BASE ===========*/
 html {
   -webkit-box-sizing: border-box;
@@ -70,10 +63,11 @@ body{
 }
 
 .email-input{
+  text-decoration: none;
   background: none;
   color: #FFFF00;
   font-family: Futura;
-  font-size: 20px;
+  font-size: 40px;
   text-align: center;
   border: none;
   margin-top: 20px;
@@ -168,7 +162,7 @@ input.middle:focus {
 }
 
 
-@media only screen and (max-width: 400px), screen and (-webkit-min-device-pixel-ratio: 2){
+@media only screen and (max-width: 400px){
   .card{
     margin: 50% 0;
     min-height: 20vh;
